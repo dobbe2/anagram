@@ -16,3 +16,5 @@ Then compare the two sets of letters. If they are exactly the same, they are con
 
 notes: spaces do not count towards the match
 
+Removal of any spaces will be required, using a split/join combination
+
