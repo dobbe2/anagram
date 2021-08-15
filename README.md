@@ -11,10 +11,10 @@ removing spaces from a string using JS-
 https://www.geeksforgeeks.org/how-to-remove-spaces-from-a-string-using-javascript/
 
 ## troubles
-when i get my 2 strings alphabetized and caompared, they were not returning equal, even is the characters where exactly the same. 
-example ['a', 'b', 'c'] != ['a', 'b', 'c']
+when i get my 2 strings alphabetized and compared, they were not returning equal, even if the characters where exactly the same. <br>
+example ['a', 'b', 'c'] != ['a', 'b', 'c'] <br>
 I decided to rejoin the characters in the array with join()
-abc === abc
+abc === abc <br>
 I found that using toString() also solved the problem
 a,b,c === a,b,c
 
