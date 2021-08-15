@@ -1,9 +1,11 @@
-// //get the input of the two words/phrases
-// let string1 = document.getElementById("word1").value;
-// let string2 = document.getElementById("word2").value;
+
 
 //creating the function to check if 2 inputs are anagrams
-function anagramChecker(string1, string2){
+function anagramChecker(){
+// //get the input of the two words/phrases
+let string1 = document.getElementById("word1").value;
+let string2 = document.getElementById("word2").value;
+console.log(string1, string2);
 //remove spaces from the strings
     let noSpaces1 = string1.split(" ").join("");
     let noSpaces2 = string2.split(" ").join("");
@@ -26,4 +28,4 @@ function anagramChecker(string1, string2){
     }
 }
 
-anagramChecker("orchestra", "carthorse ");
+// anagramChecker("orchestra", "carthorse ");
