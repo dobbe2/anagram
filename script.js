@@ -19,7 +19,11 @@ function anagramChecker(){
     let finalString2 = alphaSecondArray.join("");
     console.log(finalString1, finalString2);
 //check if arrays are same
-    if (finalString1 === finalString2){
+    if (finalString1.length < 1 && finalString2.length < 1){
+        console.log(finalString1)
+        document.getElementById("result-area").innerHTML = "Don't forget to add your words!";
+    }
+    else if (finalString1 === finalString2){
         document.getElementById("result-area").innerHTML = "Yes, these are an anagram!";
         console.log("same!");
     } else {

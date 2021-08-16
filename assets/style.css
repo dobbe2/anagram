@@ -1,0 +1,60 @@
+body { 
+    background-color:#ececec;
+    color: #696969;
+    font-size: 1em;
+}
+
+header, #info {
+    width:70%;
+    text-align: center;
+    margin: auto;
+}
+
+#wikiLink {
+    color: #575555;
+}
+
+#logo {
+    width: 100%;
+}
+
+#inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+
+#inputs > .input {
+    margin: 10px;
+}
+
+#submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+#get-user-input {
+    background-color: #575555;
+    color: #ececec ;
+}
+
+#result {
+    width: 50%;
+    /* height: 200px; */
+    margin: 20px auto;
+    /* border: red 1px solid; */
+}
+
+#result-area {
+    text-align: center;
+}
+
+@media (max-width: 425px){
+
+    header, #info {
+        width: 90%;
+    }
+}

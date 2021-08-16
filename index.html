@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Anagram Checker</title>
 </head>
 <body>
     <header>
-        <h1>Anagram Checker</h1>
+        <div >
+            <img src="./assets/images/anagramLogo.png" alt="" id="logo">
+        </div>
+    </header> 
+
+    <div id="info">
         <h3>What is an anagram?</h3>
-        <p>A word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.</p>
-        <a href="https://en.wikipedia.org/wiki/Anagram"  target="_blank">Learn More</a>
-    </header>
+        <p>
+            A word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.<br>
+            <a href="https://en.wikipedia.org/wiki/Anagram"  id="wikiLink" target="_blank">Learn More!</a>
+        </p>
+        
+    </div>
 
     <div id="inputs">
         <!-- first string to check -->
-        <input type="text" id="word1" placeholder="First Word or Phrase">
+        <input type="text" id="word1" class="input" placeholder="First Word or Phrase">
         <!-- second string to check -->
-        <input type="text" id="word2" placeholder="Second Word or Phrase">
+        <input type="text" id="word2" class="input" placeholder="Second Word or Phrase">
     </div>
+
     <div id="submit-button">
         <!-- button on click run the anagram checker -->
         <button type="submit" id="get-user-input" onclick="anagramChecker()">Click to Determine</button>
     </div>
+
     <div id="result">
         <h3 id="result-area">Yes or No?</h3>
     </div>
