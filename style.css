@@ -15,3 +15,15 @@ header {
     display: flex;
     justify-content: center;
 }
+
+#result {
+    width: 50%;
+    height: 200px;
+    margin: 20px auto;
+    border: red 1px solid;
+}
+
+#result-area {
+    display: flex;
+    margin: auto;
+}

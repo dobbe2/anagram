@@ -1,11 +1,9 @@
-
-
 //creating the function to check if 2 inputs are anagrams
 function anagramChecker(){
-// //get the input of the two words/phrases
-let string1 = document.getElementById("word1").value;
-let string2 = document.getElementById("word2").value;
-console.log(string1, string2);
+//get the input of the two words/phrases
+    let string1 = document.getElementById("word1").value;
+    let string2 = document.getElementById("word2").value;
+    console.log(string1, string2);
 //remove spaces from the strings
     let noSpaces1 = string1.split(" ").join("");
     let noSpaces2 = string2.split(" ").join("");
@@ -19,13 +17,13 @@ console.log(string1, string2);
 //rejoin characters into comparable strings
     let finalString1 = alphaFirstArray.join("");
     let finalString2 = alphaSecondArray.join("");
-    console.log(finalString1, finalString2)
+    console.log(finalString1, finalString2);
 //check if arrays are same
-    if(finalString1 === finalString2){
-        console.log("same!")
-    }else{
-        console.log("not the same")
+    if (finalString1 === finalString2){
+        document.getElementById("result-area").innerHTML = "Yes, these are an anagram!";
+        console.log("same!");
+    } else {
+        document.getElementById("result-area").innerHTML = "No, these are not an anagram";
+        console.log("not the same");
     }
 }
-
-// anagramChecker("orchestra", "carthorse ");
