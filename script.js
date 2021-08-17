@@ -35,9 +35,9 @@ function anagramChecker(){
     } else if(finalString1.length != finalString2.length){
         document.getElementById("result-area").innerHTML = "Make sure they are the same length!";
     } else if (finalString1 === finalString2){
-        document.getElementById("result-area").innerHTML = "Yes, these are an anagram!";
+        document.getElementById("result-area").innerHTML = "Yes, these are anagrams!";
     } else {
-        document.getElementById("result-area").innerHTML = "No, these are not an anagram";
+        document.getElementById("result-area").innerHTML = "No, these are not anagrams";
     }
 }
 
