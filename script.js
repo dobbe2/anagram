@@ -9,9 +9,13 @@ function anagramChecker(){
     let noSpaces1 = string1.split(" ").join("");
     let noSpaces2 = string2.split(" ").join("");
 
+//remove all non letter characters
+    let noSpaces1Clean = noSpaces1.replace(/[^A-Za-z]/g, '');
+    let noSpaces2Clean = noSpaces2.replace(/[^A-Za-z]/g, '');
+
 //seperate each character into an array using the spread operator
-    let firstArray = [...noSpaces1];
-    let secondArray = [...noSpaces2];
+    let firstArray = [...noSpaces1Clean];
+    let secondArray = [...noSpaces2Clean];
 
 //alphabatize the arrays
     let alphaFirstArray = firstArray.sort();
