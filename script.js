@@ -13,23 +13,27 @@ function anagramChecker(){
     let noSpaces1Clean = noSpaces1.replace(/[^A-Za-z]/g, '');
     let noSpaces2Clean = noSpaces2.replace(/[^A-Za-z]/g, '');
 
+//change all characters to lowercase
+    let lowerArray1 = noSpaces1Clean.toLowerCase();
+    let lowerArray2 = noSpaces2Clean.toLowerCase();
+
 //seperate each character into an array using the spread operator
-    let firstArray = [...noSpaces1Clean];
-    let secondArray = [...noSpaces2Clean];
+    let firstArray = [...lowerArray1];
+    let secondArray = [...lowerArray2];
 
 //alphabatize the arrays
     let alphaFirstArray = firstArray.sort();
     let alphaSecondArray = secondArray.sort();
-    console.log(alphaFirstArray, alphaSecondArray)
 
 //rejoin characters into comparable strings
     let finalString1 = alphaFirstArray.join("");
     let finalString2 = alphaSecondArray.join("");
-    console.log(finalString1, finalString2);
 
 //check if arrays are same
     if (finalString1.length < 1 && finalString2.length < 1){
         document.getElementById("result-area").innerHTML = "Don't forget to add your words!";
+    } else if(finalString1.length != finalString2.length){
+        document.getElementById("result-area").innerHTML = "Make sure they are the same length!";
     } else if (finalString1 === finalString2){
         document.getElementById("result-area").innerHTML = "Yes, these are an anagram!";
     } else {
