@@ -1,6 +1,7 @@
 html {
     height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 5px black
 }
 
 body { 
@@ -34,7 +35,7 @@ header, #info {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px auto;
+    margin: 15px auto;
 }
 
 #inputs > .input {
@@ -51,6 +52,8 @@ header, #info {
 #get-user-input {
     background-color: #7a828a;
     color: rgb(255, 255, 255) ;
+    font-size: 1.2em;
+    padding: 5px 32px;
 }
 
 #result {
@@ -65,5 +68,14 @@ header, #info {
 @media (max-width: 700px){
     header, #info {
         width: 90%;
+    }
+}
+
+@media (max-width: 600px){
+    body {
+        font-size: 1em;
+    }
+    h3 {
+        margin: 5px;
     }
 }

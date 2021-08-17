@@ -25,7 +25,8 @@ I found that using toString() also solved the problem
 a,b,c === a,b,c
 
 ## scenerios for bugs/troubles
-Needing to use some sort of validation to accept only letters, and omit or bypass other characters such as apostraphies, colons, or other characters that may cause 2 anagrams to not be equal to eachother.
+Needing to use some sort of validation to accept only letters, and omit or bypass other characters such as apostraphies, colons, or other characters that may cause 2 anagrams to not be equal to eachother.<br>
 *SOLVED
 
-The 2 phrases or words would need to have the same amount of characters. Otherwise, there would not be a chance for an anagram.  
+The 2 phrases or words would need to have the same amount of characters. Otherwise, there would not be a chance for an anagram.<br>
+*SOLVED 
