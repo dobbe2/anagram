@@ -43,7 +43,7 @@ abc === abc <br>
 I found that using toString() also solved the problem
 a,b,c === a,b,c
 
-## scenerios for bugs/troubles
+## Scenerios For Bugs/Troubles
 Needing to use some sort of validation to accept only letters, and omit or bypass other characters such as apostraphies, colons, or other characters that may cause 2 anagrams to not be equal to eachother.<br>
 *SOLVED
 
