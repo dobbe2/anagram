@@ -7,7 +7,6 @@ html {
 body { 
     height: 100%;
     margin: 0;
-    background: rgb(96,203,214);
     background: linear-gradient(117deg, rgba(96,203,214,1) 20%, rgba(40,97,104,1) 80%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,12 +20,12 @@ header, #info {
     margin: auto;
 }
 
-#wikiLink {
-    color: rgb(255, 255, 255);
-}
-
 #logo {
     width: 100%;
+}
+
+#wikiLink {
+    color: rgb(255, 255, 255);
 }
 
 #inputs {
@@ -47,13 +46,6 @@ header, #info {
 #submit-button {
     display: flex;
     justify-content: center;
-}
-
-#get-user-input {
-    background-color: #7a828a;
-    color: rgb(255, 255, 255) ;
-    font-size: 1.2em;
-    padding: 5px 32px;
 }
 
 #result {
