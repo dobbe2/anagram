@@ -40,6 +40,7 @@ header, #info {
 #inputs > .input {
     margin: 10px;
     height: 1.5em;
+    width: 250px;
     font-size: 1.2em;
 }
 
@@ -64,10 +65,14 @@ header, #info {
 }
 
 @media (max-width: 600px){
-    body {
+    /* body {
         font-size: 1em;
-    }
+    } */
     h3 {
         margin: 5px;
+    }
+    #inputs > .input {
+        width: 205px;
+        font-size: 1em;
     }
 }
